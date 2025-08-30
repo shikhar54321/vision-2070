@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World 2070 - Future Vision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">2070 Vision</div>
+            <ul class="nav-links">
+                <li><a href="#cities">Smart Cities</a></li>
+                <li><a href="#transport">Transport</a></li>
+                <li><a href="#energy">Energy</a></li>
+                <li><a href="#health">Healthcare</a></li>
+                <li><a href="#space">Space</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to 2070</h1>
+                <p>Experience the future of humanity</p>
+                <button class="cta-btn" onclick="startJourney()">Begin Journey</button>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-city"></div>
+            </div>
+        </section>
+
+        <section id="cities" class="tech-section">
+            <h2>Smart Cities</h2>
+            <div class="tech-grid">
+                <div class="tech-card" onclick="showDetails('cities')">
+                    <h3>Vertical Farms</h3>
+                    <div class="tech-icon">🌱</div>
+                    <p>AI-controlled vertical farms feed 12 billion people</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('cities')">
+                    <h3>Floating Districts</h3>
+                    <div class="tech-icon">🏙️</div>
+                    <p>Ocean cities house 2 billion climate refugees</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('cities')">
+                    <h3>Neural Networks</h3>
+                    <div class="tech-icon">🧠</div>
+                    <p>City-wide AI manages traffic, energy, and resources</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="transport" class="tech-section">
+            <h2>Transportation</h2>
+            <div class="tech-grid">
+                <div class="tech-card" onclick="showDetails('transport')">
+                    <h3>Hyperloop Global</h3>
+                    <div class="tech-icon">🚄</div>
+                    <p>1000mph tubes connect all continents</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('transport')">
+                    <h3>Flying Cars</h3>
+                    <div class="tech-icon">🚗</div>
+                    <p>Autonomous air taxis in every city</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('transport')">
+                    <h3>Teleportation</h3>
+                    <div class="tech-icon">⚡</div>
+                    <p>Quantum teleportation for instant travel</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="energy" class="tech-section">
+            <h2>Energy Revolution</h2>
+            <div class="tech-grid">
+                <div class="tech-card" onclick="showDetails('energy')">
+                    <h3>Fusion Power</h3>
+                    <div class="tech-icon">☀️</div>
+                    <p>Clean fusion reactors power the world</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('energy')">
+                    <h3>Space Solar</h3>
+                    <div class="tech-icon">🛰️</div>
+                    <p>Orbital solar farms beam energy to Earth</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('energy')">
+                    <h3>Atmospheric Mining</h3>
+                    <div class="tech-icon">🌪️</div>
+                    <p>Harvesting energy from weather patterns</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="health" class="tech-section">
+            <h2>Healthcare Evolution</h2>
+            <div class="tech-grid">
+                <div class="tech-card" onclick="showDetails('health')">
+                    <h3>Nano Medicine</h3>
+                    <div class="tech-icon">🔬</div>
+                    <p>Microscopic robots repair cells and organs</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('health')">
+                    <h3>Mind Upload</h3>
+                    <div class="tech-icon">💭</div>
+                    <p>Consciousness backup and digital immortality</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('health')">
+                    <h3>Gene Editing</h3>
+                    <div class="tech-icon">🧬</div>
+                    <p>Real-time DNA modification eliminates disease</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="space" class="tech-section">
+            <h2>Space Civilization</h2>
+            <div class="tech-grid">
+                <div class="tech-card" onclick="showDetails('space')">
+                    <h3>Mars Colonies</h3>
+                    <div class="tech-icon">🔴</div>
+                    <p>50 million humans live on Mars</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('space')">
+                    <h3>Asteroid Mining</h3>
+                    <div class="tech-icon">💎</div>
+                    <p>Space-based resource extraction</p>
+                </div>
+                <div class="tech-card" onclick="showDetails('space')">
+                    <h3>Interstellar Travel</h3>
+                    <div class="tech-icon">🚀</div>
+                    <p>First missions to nearby star systems</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
